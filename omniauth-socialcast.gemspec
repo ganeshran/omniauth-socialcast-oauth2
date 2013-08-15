@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Omniauth::Socialcast::VERSION
   spec.authors       = ["ganeshran"]
   spec.email         = ["ganesh.ranganathan.85@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = ["something"]
+  spec.summary       = ["summary"]
   spec.homepage      = ""
   spec.license       = "MIT"
 
