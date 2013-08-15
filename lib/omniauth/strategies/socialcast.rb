@@ -1,4 +1,4 @@
-require "omniauth/socialcast/version"
+require "omniauth-socialcast/version"
 require 'omniauth-oauth2'
 
 module Omniauth
