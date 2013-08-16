@@ -41,6 +41,11 @@ module Omniauth
       logger.debug('sociacast ruby debug message')
       puts access_token.to_s
      end
+
+     def logger
+      RAILS_DEFAULT_LOGGER ||= Logger.new(STDOUT)
+      end
+
   end
 end
 end
