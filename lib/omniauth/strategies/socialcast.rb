@@ -30,15 +30,16 @@ module Omniauth
  #     	}
  #     end
 
- #     extra do
- #     	{
- #     		'raw_info' => raw_info
- #     	}
- #     end
+     extra do
+     	{
+     		'raw_info' => raw_info
+            puts @raw_info
+     	}
+     end
 
      def raw_info
      	@raw_info ||= access_token.get('/api/userinfo.json').parsed
-      puts 'debug'
+      logger.debug('sociacast ruby debug message')
       puts access_token.to_s
      end
   end
