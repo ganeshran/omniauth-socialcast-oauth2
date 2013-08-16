@@ -16,13 +16,6 @@ module Omniauth
       	:token_url => '/oauth2/token'
       }
 
-      def build_access_token
-        access_token = super
-        #token = eval(access_token.token)['token']
-        #@access_token = ::OAuth2::AccessToken.new(client, token, access_token.params)
-	puts access_token
-      end
-
       # These are called after authentication has succeeded. If
       # possible, you should try to set the UID without making
       # additional calls (if the user id is returned with the token
