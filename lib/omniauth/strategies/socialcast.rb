@@ -36,9 +36,10 @@ module Omniauth
  #     	}
  #     end
 
- #     def raw_info
- #     	@raw_info ||= access_token.get('/userinfo').parsed
-  #    end
+     def raw_info
+     	@raw_info ||= access_token.get('/api/userinfo.json').parsed
+      puts @raw_info
+     end
   end
 end
 end
