@@ -26,7 +26,7 @@ module Omniauth
      info do
      	{
      		:name => raw_info['user']['name']
-            Rails.logger.debug(:name)
+            #Rails.logger.debug(:name)
      		#:email => raw_info['email']
      	}
      end
