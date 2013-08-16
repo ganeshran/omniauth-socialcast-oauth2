@@ -43,7 +43,7 @@ module Omniauth
      end
 
      def logger
-      RAILS_DEFAULT_LOGGER ||= Logger.new(STDOUT)
+            Logger.new(STDOUT)
       end
 
   end
