@@ -19,24 +19,24 @@ module Omniauth
       # additional calls (if the user id is returned with the token
       # or as a URI parameter). This may not be possible with all
       # providers.
-      uid{ raw_info['id'] }
+#      uid{ raw_info['id'] }
 
-      info do
-      	{
-      		:name => raw_info['name'],
-      		:email => raw_info['email']
-      	}
-      end
+ #     info do
+  #    	{
+ #     		:name => raw_info['name'],
+ #     		:email => raw_info['email']
+ #     	}
+ #     end
 
-      extra do
-      	{
+ #     extra do
+ #     	{
       		'raw_info' => raw_info
-      	}
-      end
+ #     	}
+ #     end
 
-      def raw_info
-      	@raw_info ||= access_token.get('/userinfo').parsed
-      end
+ #     def raw_info
+ #     	@raw_info ||= access_token.get('/userinfo').parsed
+  #    end
   end
 end
 end
