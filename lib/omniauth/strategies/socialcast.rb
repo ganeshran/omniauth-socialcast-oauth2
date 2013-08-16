@@ -9,9 +9,9 @@ module Omniauth
         # This is where you pass the options you would pass when
       # initializing your consumer from the OAuth gem.
       option :client_options, {
-      	:site => 'https://advisory-com.socialcast.com/api',
-      	:authorize_url => 'https://advisory-com.socialcast.com/oauth2/authorization?response_type=code',
-      	:token_url => 'https://advisory-com.socialcast.com/oauth2/token'
+      	:site => (ENV['SOCIALCAST_DOMAIN'] || 'https://demo.socialcast.com'),
+      	:authorize_url => '/oauth2/authorization?response_type=code',
+      	:token_url => '/oauth2/token'
       }
 
       # These are called after authentication has succeeded. If
