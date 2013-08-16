@@ -21,30 +21,25 @@ module Omniauth
       # additional calls (if the user id is returned with the token
       # or as a URI parameter). This may not be possible with all
       # providers.
-#      uid{ raw_info['id'] }
+      uid{ raw_info['user']['id'] }
 
- #     info do
-  #    	{
- #     		:name => raw_info['name'],
- #     		:email => raw_info['email']
- #     	}
- #     end
-
-     extra do
+     info do
      	{
-     		'raw_info' => raw_info
+     		:name => raw_info['user']['name']
+            Rails.logger.debug(:name)
+     		#:email => raw_info['email']
      	}
      end
 
+     # extra do
+     # 	{
+     # 		'raw_info' => raw_info
+     # 	}
+     # end
+
      def raw_info
      	@raw_info ||= access_token.get('/api/userinfo.json').parsed
-      Rails.logger.debug('sociacast ruby debug message')
-      Rails.logger.debug @raw_info.inspect
      end
-
-     def logger
-            Logger.new(STDOUT)
-      end
 
   end
 end
