@@ -18,9 +18,9 @@ module Omniauth
 
       def build_access_token
         access_token = super
-        token = eval(access_token.token)['token']
-        @access_token = ::OAuth2::AccessToken.new(client, token, access_token.params)
-	puts @access_token
+        #token = eval(access_token.token)['token']
+        #@access_token = ::OAuth2::AccessToken.new(client, token, access_token.params)
+	puts access_token
       end
 
       # These are called after authentication has succeeded. If
