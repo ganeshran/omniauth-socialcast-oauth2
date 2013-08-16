@@ -10,7 +10,7 @@ module Omniauth
       # initializing your consumer from the OAuth gem.
       option :client_options, {
       	#:site => (ENV['SOCIALCAST_DOMAIN'] || 'https://demo.socialcast.com'),
-      	:site => (ENV['SOCIALCAST_DOMAIN'])
+      	:site => (ENV['SOCIALCAST_DOMAIN']),
       	:authorize_url => '/oauth2/authorization?response_type=code',
       	:token_url => '/oauth2/token'
       }
