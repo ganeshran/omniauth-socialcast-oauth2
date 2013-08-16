@@ -11,7 +11,7 @@ module Omniauth
       option :client_options, {
       	:site => 'https://advisory-com.socialcast.com/api',
       	:authorize_url => 'https://advisory-com.socialcast.com/oauth2/authorization?response_type=code',
-      	:token_url => 'https://advisory-com.socialcast.com/oauth2/accessToken'
+      	:token_url => 'https://advisory-com.socialcast.com/oauth2/token'
       }
 
       # These are called after authentication has succeeded. If
