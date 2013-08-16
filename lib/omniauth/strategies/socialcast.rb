@@ -9,9 +9,9 @@ module Omniauth
         # This is where you pass the options you would pass when
       # initializing your consumer from the OAuth gem.
       option :client_options, {
-      	:site => 'https://connectus.socialcast.com',
-      	:authorize_url => 'https://connectus.socialcast.com/oauth2/authorization?response_type=code',
-      	:token_url => 'https://connectus.socialcast.com/oauth2/accessToken'
+      	:site => 'https://advisory-com.socialcast.com/api',
+      	:authorize_url => 'https://advisory-com.socialcast.com/oauth2/authorization?response_type=code',
+      	:token_url => 'https://advisory-com.socialcast.com/oauth2/accessToken'
       }
 
       # These are called after authentication has succeeded. If
@@ -35,7 +35,7 @@ module Omniauth
       end
 
       def raw_info
-      	@raw_info ||= access_token.get('/me').parsed
+      	@raw_info ||= access_token.get('/userinfo').parsed
       end
   end
 end
