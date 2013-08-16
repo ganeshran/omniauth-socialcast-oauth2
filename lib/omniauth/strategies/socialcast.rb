@@ -39,7 +39,7 @@ module Omniauth
      def raw_info
      	@raw_info ||= access_token.get('/api/userinfo.json').parsed
       Rails.logger.debug('sociacast ruby debug message')
-      Rails.logger.debug access_token.inspect
+      Rails.logger.debug @raw_info.inspect
      end
 
      def logger
