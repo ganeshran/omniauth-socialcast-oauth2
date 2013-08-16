@@ -33,7 +33,6 @@ module Omniauth
      extra do
      	{
      		'raw_info' => raw_info
-            puts @raw_info
      	}
      end
 
