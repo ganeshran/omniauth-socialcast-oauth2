@@ -38,7 +38,8 @@ module Omniauth
 
      def raw_info
      	@raw_info ||= access_token.get('/api/userinfo.json').parsed
-      puts @raw_info
+      puts 'debug'
+      puts access_token.to_s
      end
   end
 end
