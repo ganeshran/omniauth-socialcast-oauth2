@@ -33,6 +33,9 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
+The application authentication url is  handled at http:\\www.yourrailsapp.com\auth\socialcast and the callback url is http:\\www.yourrailsapp.com\auth\callback. 
+Please ask the site administrator to enter the redirect url while creating the app.
+
 ## Contributing
 
 1. Fork it
