@@ -20,7 +20,7 @@ Or install it yourself as:
 
 Example usage in a rails application
 
-In the omniauth.rb file in initializers folder use this
+This code block has to be added in the omniauth.rb file in initializers folder
 
 ```
 require 'omniauth'
