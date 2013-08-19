@@ -6,7 +6,7 @@ omniauth-socialcast-oauth2 is a gem based on omniauth-oauth2 which helps you int
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-socialcast'
+    gem 'omniauth-socialcast-oauth2'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-socialcast
+    $ gem install omniauth-socialcast-oauth2
 
 ## Usage
 
