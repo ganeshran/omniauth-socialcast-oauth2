@@ -22,7 +22,7 @@ Example usage in a rails application
 
 In the omniauth.rb file in initializers folder use this
 
-'''
+```
 require 'omniauth'
 require 'omniauth-socialcast-oauth2'
 
@@ -31,7 +31,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider Omniauth::Strategies::Socialcast, 
   ENV['CLIENTID'], ENV['CLIENTSECRET'], :client_options => {:site => "https://demo.socialcast.com"}
 end
-'''
+```
 
 ## Contributing
 
