@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Omniauth::SocialcastOauth2::VERSION
   spec.authors       = ["ganeshran"]
   spec.email         = ["ganesh.ranganathan.85@gmail.com"]
-  spec.description   = ["something"]
-  spec.summary       = ["summary"]
+  spec.description   = ["Omniauth strategy for Socialcast"]
+  spec.summary       = ["This gem is for integrating Oauth integration with socialcast."]
   spec.homepage      = ""
   spec.license       = "MIT"
 
