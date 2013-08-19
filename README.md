@@ -1,6 +1,6 @@
 # Omniauth - Socialcast Oauth2 
 
-omniauth-socialcast-oauth2 is a gem based on omniauth-oauth2 which helps you integrate your application with Socialcast using oauth Authentication
+omniauth-socialcast-oauth2 is a gem based on omniauth-oauth2 which helps you integrate your application with Socialcast using oauth
 
 ## Installation
 
@@ -18,7 +18,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Example usage in a rails application
+
+In the omniauth.rb file in initializers folder use this
+
+'''
+require 'omniauth'
+require 'omniauth-socialcast-oauth2'
+
+Rails.application.config.middleware.use OmniAuth::Builder do
+  #Please make sure to substitute the :site option
+  provider Omniauth::Strategies::Socialcast, 
+  ENV['CLIENTID'], ENV['CLIENTSECRET'], :client_options => {:site => "https://demo.socialcast.com"}
+end
+'''
 
 ## Contributing
 
