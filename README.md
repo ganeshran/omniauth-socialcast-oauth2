@@ -1,6 +1,6 @@
-# Omniauth::Socialcast
+# Omniauth - Socialcast Oauth2 
 
-TODO: Write a gem description
+omniauth-socialcast-oauth2 is a gem based on omniauth-oauth2 which helps you integrate your application with Socialcast using oauth Authentication
 
 ## Installation
 
