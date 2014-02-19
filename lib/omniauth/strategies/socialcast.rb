@@ -11,7 +11,8 @@ module Omniauth
       option :client_options, {
       	:site => nil,
       	:authorize_url => '/oauth2/authorization?response_type=code',
-      	:token_url => '/oauth2/token'
+      	:token_url => '/oauth2/token',
+      	:proxy => ENV['http_proxy'] ? URI(ENV['http_proxy']) : nil
       }
 
       uid{ raw_info['user']['id'] }
